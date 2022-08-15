@@ -104,7 +104,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--negro);
 }
 
 .logo {
@@ -123,7 +122,11 @@ nav {
     text-transform: uppercase;
 }
 
-nav ul li a:visited {
+nav a {
+    color: var(--negro);
+}
+
+nav a:visited {
     color: var(--negro);
 }
 
@@ -131,9 +134,6 @@ nav ul li a:hover {
     border-bottom: 1.5px solid;
 }
 
-nav .logo:visited {
-    color: var(--negro);
-}
 
 @media (min-width: 1200px) {
 
