@@ -108,6 +108,11 @@ li {
 
 /*Header*/
 
+header {
+    position: sticky;
+    top: 0;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -126,7 +131,7 @@ nav a:visited {
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: bold;
-    padding-top: 1rem;
+    padding: 2rem;
 }
 
 .nav_links {
@@ -171,14 +176,10 @@ nav a:visited {
 
 @media (min-width: 1200px) {
 
-    header {
-        position: sticky;
-        top: 0;
-    }
+
 
     nav {    
         flex-direction: row;
-  
         height: 8rem;
         background-color: var(--blanco);
         box-shadow: .1rem .2rem .3rem #333;
@@ -193,7 +194,7 @@ nav a:visited {
     }
 
     .logo {
-        padding: 5rem;
+
     }
 } 
 
