@@ -63,6 +63,7 @@ li {
     background-color: var(--oscuro);
     color: var(--blanco);
     border:.3rem solid var(--dorado);
+    border-radius: .8rem;
     padding: 2rem 8rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -70,9 +71,10 @@ li {
 }
 
 .boton2 {
-    background-color: var(--blanco);
+    background-color: #e0e0e0;
     color: var(--negro);
     border:.3rem solid var(--dorado);
+    border-radius: .8rem;
     padding: 2rem 8rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -621,6 +623,10 @@ footer a:hover {
     padding: 5rem;
    }
 
+   .portada_galeria {
+    height: 50vh;
+   }
+
    .portada_galeria h1 {
     font-size: 7rem;
    }
@@ -631,7 +637,9 @@ footer a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
    }
-
+   .portada_galeria {
+    height: 40vh;
+   }
    .modelos {
     height: 60rem;
     width: 37rem;
@@ -670,14 +678,14 @@ footer a:hover {
 }
 
 .contenedor_turnos {
+    max-width: 140rem;
+    margin: 0 auto;
     display: grid;
     justify-items: center;
     row-gap: 4rem;
-
 }
 
 .turno {
-    border: .2rem solid var(--negro);
     height: 50rem;
     width: 30rem;
     padding: 0;
@@ -686,7 +694,10 @@ footer a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    box-shadow: 4px 8px 21px 8px rgba(0,0,0,0.27);
+    border-radius: 3rem;
+    background-color: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -728,6 +739,7 @@ footer a:hover {
 
 @media (min-width: 1200px) {
    .contenedor_turnos {
+    height: 70rem;
     grid-template-columns: repeat(3, 1fr);
     gap: .5rem;
    }
