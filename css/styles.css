@@ -203,31 +203,23 @@ nav {
 /*Servicios index*/
 
 .contenedor_servicios {
-    min-height: 40rem;
+    min-height: 30rem;
+    gap: 2rem;
 }
 
-.servicio {
-
-}
 
 /*Blog index*/
 
-.contenedor_blog {
-   min-height: 75rem;
+ .contenedor_blog {
+   min-height: 60rem;
+   column-gap: 10rem;
    background-color: var(--oscuro);
-   display: grid;
-   justify-items: center;
 }
 
 .entrada_blog {
-    width: 30rem;
-    color: var(--blanco);
+    max-width: 30rem;
     border-bottom: .1rem solid var(--gris);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem .1rem;
-}
+} 
 
 
 .entrada_blog img {
@@ -237,14 +229,12 @@ nav {
 }
 
 .entrada_blog a {
-    width: 9rem;
     color: var(--dorado);
     border-bottom: 1.5px solid;
-    text-transform: uppercase;
 }
 
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
    .contenedor_blog {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -255,7 +245,7 @@ nav {
     align-items:flex-start;
     border-bottom: none;
    }
-} 
+}  */
 
 /*Mapa index*/
 
