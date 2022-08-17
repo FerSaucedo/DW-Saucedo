@@ -185,17 +185,12 @@ nav {
 /*Conocenos index*/
 
 .conocenos_contenedor {
-    background-color: var(--oscuro);
-    height: 50rem;
-    color: var(--blanco);    
+  background-color: var(--oscuro);
+  min-height: 50rem;
 }
 
-.col a {
-    margin-top: 5rem !important;
-}
-
-.col span {
-    color: var(--dorado);
+.conocenos_contenido span {
+  color: var(--dorado);
 }
 
 .imagen_salon {
