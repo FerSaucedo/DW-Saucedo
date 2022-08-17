@@ -50,11 +50,6 @@ li {
 
 /*Utilidades*/
 
-.contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-}
-
 .border {
     border-bottom: .1rem solid;
 }
@@ -114,42 +109,17 @@ header {
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    min-height: 8rem;
 }
 
-nav a {
-    color: var(--negro);
-}
-
-nav a:visited {
-    color: var(--negro);
+.nav-link {
+    letter-spacing: .4rem;
 }
 
 .logo {
-    text-transform: uppercase;
     font-size: 3rem;
-    font-weight: bold;
-    padding: 2rem;
 }
-
-.nav_links {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    text-transform: uppercase;
-}
-
-.nav_links li a {
-    padding-bottom: .7rem;
-    letter-spacing: .4rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-   }
-
+/*
 .links {    
     position: relative;
     color: black;
@@ -172,45 +142,16 @@ nav a:visited {
 .nav_links li:hover .links:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-@media (min-width: 1200px) {
-
-
-
-    nav {    
-        flex-direction: row;
-        height: 8rem;
-        background-color: var(--blanco);
-        box-shadow: .1rem .2rem .3rem #333;
-    }
-
-    .nav_links {
-        flex-direction: row;
-        justify-content: center;
-        width: 80%;
-        gap: 7rem;
-        font-size: 1.4rem;
-    }
-
-    .logo {
-
-    }
-} 
+} */
 
 /*Portada index*/
 
 .portada_hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--blanco);
     height: 90%;
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
     )
     ,url(../img/herom.jpg);
     background-size: cover;
@@ -220,7 +161,12 @@ nav a:visited {
 
 @media (min-width: 1200px) {
    .portada_hero {
-    background-image: url(../img/hero.jpg);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(../img/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -241,22 +187,14 @@ nav a:visited {
 .conocenos_contenedor {
     background-color: var(--oscuro);
     height: 50rem;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    color: var(--blanco);    
 }
 
-.conocenos_contenido {
-    color: var(--blanco);
-    text-align: center;
+.col a {
+    margin-top: 5rem !important;
 }
 
-.conocenos_contenedor a {
-    margin-top: 5rem;
-}
-
-.conocenos_contenido span {
+.col span {
     color: var(--dorado);
 }
 
