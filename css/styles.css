@@ -51,7 +51,7 @@ li {
 /*Utilidades*/
 
 .border {
-    border-bottom: .1rem solid;
+    border-bottom: .1rem solid !important;
 }
 
 .boton {
@@ -113,21 +113,21 @@ nav {
     box-shadow: 0.1rem 0.2rem 0.3rem #333;
 }
 
-.nav-link {
-    letter-spacing: .4rem;
+.navbar-toggler-icon {
+    height: 3rem;
+    width: 3rem;
 }
 
-.logo {
-    font-size: 3rem;
+.nav_flex {
+    gap: 2rem;
 }
-/*
-.links {    
+
+.nav-link {
+    letter-spacing: .4rem;
     position: relative;
-    color: black;
-    padding-bottom: 20px;
 }
-   
-.links:after {
+
+.nav-link:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -140,10 +140,21 @@ nav {
     transition: transform 0.25s ease-out;
 }
 
-.nav_links li:hover .links:after {
+.navbar-nav li:hover .nav-link:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-} */
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+@media (min-width: 992px) {
+    .nav_flex {
+        gap: 5rem;
+    }
+} 
+
 
 /*Portada index*/
 
@@ -213,7 +224,7 @@ nav {
 
  .contenedor_blog {
    min-height: 60rem;
-   column-gap: 25rem;
+   column-gap: 5rem;
    background-color: var(--oscuro);
 }
 
@@ -235,11 +246,12 @@ nav {
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 650px) {
     
    .entrada_blog {
     border-bottom: none;
    }
+
 } 
 
 /*Mapa index*/
@@ -267,13 +279,6 @@ footer a:hover {
     min-height: 25rem;
 }
 
-/*.contenedor_footer2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}*/
-
 .contenedor_redes,
 .contenedor_footer3 {
     gap: 1.3rem;
@@ -283,18 +288,6 @@ footer a:hover {
     color: var(--blanco);
 }
 
-/*.contenedor_footer4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem;
-}
-
-.contenedor_footer4 p {
-    margin: .5rem;
-}*/
-
 .contenedor_footer4 span {
     font-size: 1.7rem;
 }
@@ -302,12 +295,9 @@ footer a:hover {
 .footer_final {
     border-top: .1rem solid var(--gris);
 }
-/* .footer_final p {
-    margin-bottom: 0;
-} */
 
 
- @media (min-width: 768px ) {
+@media (min-width: 768px ) {
 
     .contenedor_footer3 {
         align-items: flex-start !important;
@@ -316,7 +306,7 @@ footer a:hover {
     .contenedor_footer4 {
         align-items: flex-start !important;
     }
- }
+}
 
 /*Servicios.html*/
 
