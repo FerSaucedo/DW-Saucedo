@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Sunrise</title>
 
@@ -19,17 +22,36 @@
     <!-- Inicio Header -->
     <header>
 
-        <nav class="nav">
-
-            <a href="../index.html" class="logo">Sunrise</a>
-
-            <ul class="nav_links">
-                <li><a href="../index.html" class="links">Inicio</a></li>
-                <li><a href="./servicios.html" class="links">Servicios</a></li>
-                <li><a href="./galeria.html" class="links border">Galeria</a></li>
-                <li><a href="./turnos.html" class="links">Turnos</a></li>
-                <li><a href="./contacto.html" class="links">Contacto</a> </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light text-uppercase">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand fw-bold logo m-auto" href="../index.html">Sunrise</a>
+                <div class="collapse navbar-collapse justify-content-center " id="navbarTogglerDemo03">
+                    <ul class="navbar-nav p-5 nav_flex">
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold fs-5 pb-1 px-0" aria-current="page"
+                                href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold fs-5 pb-1 px-0" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold fs-5 pb-1 px-0 border active"
+                                href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold fs-5 pb-1 px-0" href="./turnos.html">Turnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold fs-5 pb-1 px-0" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
     </header>
@@ -42,27 +64,27 @@
     <main>
         <div class="galeria">
             <div class="modelos">
-                <img src="../img/model1.jpg" alt="modelo1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modelo1"><img src="../img/model1.jpg" alt="modelo1"></a>
             </div>
 
             <div class="modelos">
-                <img src="../img/model6.jpg" alt="modelo2">
+               <a href="#" data-bs-toggle="modal" data-bs-target="#modelo6"><img src="../img/model6.jpg" alt="modelo2"></a> 
             </div>
 
             <div class="modelos">
-                <img src="../img/model3.jpg" alt="modelo3">
+               <a href="#" data-bs-toggle="modal" data-bs-target="#modelo3"><img src="../img/model3.jpg" alt="modelo3"></a> 
             </div>
 
             <div class="modelos">
-                <img src="../img/model2.jpg" alt="modelo4">
+               <a href="#" data-bs-toggle="modal" data-bs-target="#modelo2"><img src="../img/model2.jpg" alt="modelo4"></a> 
             </div>
 
             <div class="modelos">
-                <img src="../img/model5.jpg" alt="modelo5">
+               <a href="#" data-bs-toggle="modal" data-bs-target="#modelo5"><img src="../img/model5.jpg" alt="modelo5"></a> 
             </div>
 
             <div class="modelos">
-                <img src="../img/model4.jpg" alt="modelo6">
+               <a href="#" data-bs-toggle="modal" data-bs-target="#modelo4"><img src="../img/model4.jpg" alt="modelo6"></a> 
             </div>
         </div>
 
@@ -70,17 +92,53 @@
             <a href="#" class="boton">Ver más</a>
         </div>
 
-
+        <!--modal-->
+        <div class="modal fade" id="modelo1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <img src="../img/model1.jpg" class="img-fluid rounded" alt="modelo1">
+            </div>
+        </div>
+        <div class="modal fade" id="modelo2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <img src="../img/model2.jpg" class="img-fluid rounded" alt="modelo2">
+            </div>
+        </div>
+        <div class="modal fade" id="modelo3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <img src="../img/model3.jpg" class="img-fluid rounded" alt="modelo3">
+            </div>
+        </div>
+        <div class="modal fade" id="modelo4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <img src="../img/model4.jpg" class="img-fluid rounded" alt="modelo4">
+            </div>
+        </div>
+        <div class="modal fade" id="modelo5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <img src="../img/model5.jpg" class="img-fluid rounded" alt="modelo5">
+            </div>
+        </div>
+        <div class="modal fade" id="modelo6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <img src="../img/model6.jpg" class="img-fluid rounded" alt="modelo6">
+            </div>
+        </div>
     </main>
 
 
-    <footer class="footer">
-        <div class="contenedor_footer1">
-            <div class="contenedor_footer2">
+    <footer class="text-light container-fluid">
+        <div class="row contenedor_footer1">
+            <div class=" col-12 col-md-5 py-5 px-1 d-flex flex-column justify-content-center align-items-center">
 
-                <a href="../index.html" class="logo_footer">Sunrise</a>
+                <a href="../index.html" class="text-uppercase fw-bold logo">Sunrise</a>
 
-                <div class="contenedor_redes">
+                <div class="d-flex contenedor_redes">
                     <div>
                         <a href="https://www.facebook.com"><svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-brand-facebook" width="28" height="28"
@@ -127,30 +185,37 @@
                 </div>
             </div>
 
-            <div class="contenedor_footer3">
-                <h3>Contacto</h3>
+            <div
+                class="col-12 col-md-4 py-5 px-1 d-flex flex-column justify-content-center align-items-center contenedor_footer3">
+                <a href="./contacto.html">
+                    <h3 class="fw-bold pb-3">Contacto</h3>
+                </a>
                 <a href="https://goo.gl/maps/kSgmjCrmhkQLHVV57">Calle Falsa 123, Buenos Aires, Argentina</a>
                 <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a>
                 <a href="tel:+54 11 1234 5678">+54 11 1234 5678</a>
             </div>
 
-            <div class="contenedor_footer4">
-                <h3>Horarios</h3>
-                <p><span>Mar - Sab</span></p>
-                <p>10 hs a 20 hs</p>
-                <p><span>Dom</span></p>
-                <p>Cerrado</p>
+            <div
+                class="col-12 col-md-3 py-5 px-1 d-flex flex-column justify-content-center align-items-center  contenedor_footer4">
+                <h3 class="fw-bold pb-3">Horarios</h3>
+                <p class="m-1"><span class="fw-bold">Mar - Sab</span></p>
+                <p class="m-1">10 hs a 20 hs</p>
+                <p class="m-1"><span class="fw-bold">Dom</span></p>
+                <p class="m-1">Cerrado</p>
             </div>
 
         </div>
 
-        <div class="footer_linea"></div>
-
-        <div class="footer_final">
-            <p>©2022 Fernando Saucedo. All Rights Reserved</p>
+        <div class="text-center footer_final">
+            <p class="mb-0">©2022 Fernando Saucedo. All Rights Reserved</p>
         </div>
 
     </footer>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
