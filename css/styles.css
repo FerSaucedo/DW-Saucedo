@@ -313,17 +313,12 @@ footer .logo:hover{
 
 .portada_servicios {
     height: 70vh;
-    color: var(--blanco);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url(../img/serviciosm.jpg);
     background-size: cover;
 }
 
 .portada_servicios h1 {
     font-size: 5.2rem;
-    text-align: center;
 }
 
 
@@ -339,34 +334,20 @@ footer .logo:hover{
 } 
 
 /*Servicios.html - servicios*/
+
 .servicios_main {
     background: linear-gradient(to bottom, rgba(194,194,194,1) 0%, rgba(194,194,194,1) 7%, rgba(204,204,204,1) 19%, rgba(209,209,209,1) 30%, rgba(237,237,237,1) 50%, rgba(237,237,237,1) 100%);
 }
 
 .contenedor_servicio1 h3,
 .contenedor_servicio2 h3 {
-    margin: 0;
-    text-align: center;
-    padding-top: 3rem;
     text-shadow: 0px 4px 5px rgba(0,0,0,0.66);
 }
 
 .servicio1,
 .servicio2 {
-    height: 40rem;
-    padding: 1rem;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.servicio1 li,
-.servicio2 li {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 2rem;
+    height: 30rem;  
+    gap: 2rem;
 }
 
 .servicio1 p,
@@ -374,24 +355,15 @@ footer .logo:hover{
     margin: 0;
 }
 
-.servicio1 hr,
-.servicio2 hr {
-    display: none
-}
-
-
 @media (min-width: 480px) {
-   .servicio1 li hr,
-   .servicio2 li hr {
-       display: flex;
-       color: var(--negro);
-       width: 40%;   
-       margin: 0;
-   }
+    .linea {
+        border-bottom: .1rem solid var(--gris);
+        width: 50%;
+    }
 
     .servicio1 li,
     .servicio2 li {
-        justify-content: space-evenly;
+        justify-content: space-evenly !important;
     }
 } 
 
@@ -409,23 +381,15 @@ footer .logo:hover{
 
 @media (min-width: 1200px) {
     .contenedor_servicio1 {
+        height: 40rem;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 5rem;
     }
 
-    .contenedor_servicio1 h3 {
-        padding-top: 0;
-    }
-
     .servicio1 {
-        width: 35%;
-        gap: 4rem;
-    }
-
-    .servicio1 li {
-        padding: 0rem;
+        width: 40%;
     }
 
     .servicios_contenedor2 {
@@ -436,9 +400,9 @@ footer .logo:hover{
     }
 
     .servicio2 {
-        width: 50rem;
+        width: 60rem;
     }
-}   
+}    
 
 
 /*Galeria.html*/
