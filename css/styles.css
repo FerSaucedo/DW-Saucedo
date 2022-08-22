@@ -200,6 +200,10 @@ nav {
   min-height: 50rem;
 }
 
+.conocenos_contenido {
+    max-width: 100rem;
+}
+
 .conocenos_contenido span {
   color: var(--dorado);
 }
@@ -218,17 +222,15 @@ nav {
     gap: 2rem;
 }
 
-
 /*Blog index*/
 
  .contenedor_blog {
    min-height: 60rem;
-   column-gap: 5rem;
    background-color: var(--oscuro);
 }
 
 .entrada_blog {
-    max-width: 30rem;
+    max-width: 35rem;
     border-bottom: .1rem solid var(--gris);
 } 
 
