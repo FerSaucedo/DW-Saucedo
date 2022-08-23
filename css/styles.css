@@ -205,6 +205,7 @@ nav {
 }
 
 .conocenos_contenido span {
+  text-transform: uppercase;
   color: var(--dorado);
 }
 
