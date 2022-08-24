@@ -1,0 +1,54 @@
+/*Header*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav {
+    min-height: 8rem;
+    box-shadow: 0.1rem 0.2rem 0.3rem #333;
+}
+
+.navbar-toggler-icon {
+    height: 3rem;
+    width: 3rem;
+}
+
+.nav_flex {
+    gap: 2rem;
+}
+
+.nav-link {
+    letter-spacing: .4rem;
+    position: relative;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: .1rem;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar-nav li:hover .nav-link:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+@media (min-width: 992px) {
+    .nav_flex {
+        gap: 5rem;
+    }
+} 

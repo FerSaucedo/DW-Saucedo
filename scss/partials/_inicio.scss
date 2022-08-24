@@ -1,0 +1,107 @@
+
+/*Portada index*/
+
+.portada_hero {
+    height: 90%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(../img/herom.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (min-width: 1200px) {
+   .portada_hero {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   }
+
+   .portada_hero h1 {
+    font-size: 12rem;
+    margin: 0;
+   }
+
+   .portada_hero p {
+    font-size: 2rem;
+   }
+} 
+
+/*Conocenos index*/
+
+.conocenos_contenedor {
+  background-color: var(--oscuro);
+  min-height: 50rem;
+}
+
+.conocenos_contenido {
+    max-width: 100rem;
+}
+
+.conocenos_contenido span {
+  text-transform: uppercase;
+  color: var(--dorado);
+}
+
+.imagen_salon {
+    background-image: url(../img/salon.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 60%;  
+}
+
+/*Servicios index*/
+
+.contenedor_servicios {
+    min-height: 30rem;
+    gap: 2rem;
+}
+
+/*Blog index*/
+
+ .contenedor_blog {
+   min-height: 60rem;
+   background-color: var(--oscuro);
+}
+
+.entrada_blog {
+    max-width: 35rem;
+    border-bottom: .1rem solid var(--gris);
+} 
+
+
+.entrada_blog img {
+    width: 30rem;
+    height: 35rem;
+    object-fit: cover;
+}
+
+.entrada_blog a {
+    color: var(--dorado);
+    border-bottom: 1.5px solid;
+}
+
+
+@media (min-width: 650px) {
+    
+   .entrada_blog {
+    border-bottom: none;
+   }
+
+} 
+
+/*Mapa index*/
+
+.mapa_principal {
+    height: 40rem;
+}
