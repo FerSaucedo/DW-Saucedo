@@ -43,7 +43,7 @@
     .servicio2 li {
         justify-content: space-evenly !important;
         .linea {
-            border-bottom: .1rem solid $gris;
+            border-bottom: .1rem solid map-get($color, gris);
             width: 50%;
         }
     }

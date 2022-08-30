@@ -1,0 +1,12 @@
+
+@mixin boton($bgColor, $textColor) {
+    @extend %boton;
+    background-color: $bgColor;
+    color: $textColor;
+    border: .3rem solid map-get($color, dorado);
+}
+
+@mixin wh($width, $height) {
+    width: $width;
+    height: $height;
+}

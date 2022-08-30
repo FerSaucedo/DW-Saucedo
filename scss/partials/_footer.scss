@@ -2,15 +2,18 @@
 /*Footer*/
 
 footer {
-    background-color: $negro;
+    background-color: map-get($color, negro);
     a {
         &:visited {
-            color: $blanco;
+            color: map-get($color, blanco);
         }
         &:hover,
         .logo:hover {
-            color: $dorado !important;
+            color: map-get($color, dorado) !important;
         }
+    }
+    .logo {
+        font-size: 3rem;
     }
     .contenedor_footer1 {
         min-height: 25rem;
@@ -21,7 +24,7 @@ footer {
     .contenedor_footer3 {
         gap: 1.3rem;
         a {
-            color: $blanco;
+            color: map-get($color, blanco);
         }
     }
     .contenedor_footer4 {
@@ -30,7 +33,7 @@ footer {
         }
     }
     .footer_final {
-        border-top: 0.1rem solid $gris;
+        border-top: 0.1rem solid map-get($color, gris);
     }
 }
 

@@ -28,13 +28,13 @@
 /*Conocenos index*/
 
 .conocenos_contenedor {
-    background-color: $oscuro;
+    background-color: map-get($color, oscuro);
     min-height: 50rem;
     .conocenos_contenido {
         max-width: 100rem;
         span {
             text-transform: uppercase;
-            color: $dorado;
+            color: map-get($color, dorado);
         }
     }
 }
@@ -57,17 +57,16 @@
 
 .contenedor_blog {
     min-height: 60rem;
-    background-color: $oscuro;
+    background-color: map-get($color, oscuro);
     .entrada_blog {
         max-width: 35rem;
-        border-bottom: 0.1rem solid $gris;
+        border-bottom: 0.1rem solid map-get($color, gris);
         img {
-            width: 30rem;
-            height: 35rem;
+            @include wh(30rem, 35rem);
             object-fit: cover;
         }
         a {
-            color: $dorado;
+            color: map-get($color, dorado);
             border-bottom: 1.5px solid;
         }
     }
@@ -75,7 +74,7 @@
 
 @media (min-width: 650px) {
     .entrada_blog {
-        border-bottom: none;
+        border-bottom: none !important;
     }
 }
 

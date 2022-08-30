@@ -35,6 +35,20 @@ html body li {
 *:after {
   box-sizing: inherit;
 } /*snipet box-sizing */
+.boton2, .boton {
+  border-radius: 0.8rem;
+  padding: 2rem 8rem;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease;
+}
+
+.contenedor_contacto .imagen_contacto img, .galeria_bg .galeria img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*Utilidades*/
 .borde {
   border-bottom: 0.1rem solid !important;
@@ -44,10 +58,6 @@ html body li {
   background-color: #262626;
   color: #FFFFFF;
   border: 0.3rem solid #C59D5F;
-  border-radius: 0.8rem;
-  padding: 2rem 8rem;
-  text-transform: uppercase;
-  transition: background-color 0.5s ease;
 }
 .boton:hover {
   background-color: #FFFFFF;
@@ -58,10 +68,6 @@ html body li {
   background-color: #e0e0e0;
   color: #000000;
   border: 0.3rem solid #C59D5F;
-  border-radius: 0.8rem;
-  padding: 2rem 8rem;
-  text-transform: uppercase;
-  transition: background-color 0.5s ease;
 }
 .boton2:hover {
   background-color: #000000;
@@ -70,8 +76,8 @@ html body li {
 
 .boton3 {
   border: none;
-  height: 5rem;
   width: 20rem;
+  height: 5rem;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -97,8 +103,8 @@ header nav .logo {
   font-size: 3rem;
 }
 header nav .navbar-toggler-icon {
-  height: 3rem;
   width: 3rem;
+  height: 3rem;
 }
 header nav .nav_flex {
   gap: 2rem;
@@ -111,8 +117,8 @@ header nav .nav_flex .nav-link:after {
   content: "";
   position: absolute;
   width: 100%;
-  transform: scaleX(0);
   height: 0.1rem;
+  transform: scaleX(0);
   bottom: 0;
   left: 0;
   background-color: #000000;
@@ -127,7 +133,7 @@ header nav .nav_flex .nav-link:after {
 
 @media (min-width: 992px) {
   .nav_flex {
-    gap: 5rem;
+    gap: 5rem !important;
   }
 }
 /*Footer*/
@@ -140,6 +146,9 @@ footer a:visited {
 footer a:hover,
 footer a .logo:hover {
   color: #C59D5F !important;
+}
+footer .logo {
+  font-size: 3rem;
 }
 footer .contenedor_footer1 {
   min-height: 25rem;
@@ -238,7 +247,7 @@ footer .footer_final {
 
 @media (min-width: 650px) {
   .entrada_blog {
-    border-bottom: none;
+    border-bottom: none !important;
   }
 }
 /*Mapa index*/
@@ -336,18 +345,15 @@ footer .footer_final {
   height: 70vh;
   text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.66);
 }
+.galeria_bg .portada_galeria h1 {
+  font-size: 5rem;
+}
 .galeria_bg .galeria {
   gap: 4rem;
 }
-.galeria_bg .galeria img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .galeria_bg .galeria .modelos {
-  height: 50rem;
   width: 30rem;
+  height: 50rem;
   box-shadow: 4px 8px 21px 8px rgba(0, 0, 0, 0.75);
   transition: all 300ms;
 }
@@ -357,15 +363,15 @@ footer .footer_final {
 
 @media (min-width: 768px) {
   .portada_galeria {
-    height: 50vh;
+    height: 50vh !important;
   }
   .portada_galeria h1 {
-    font-size: 7rem;
+    font-size: 7rem !important;
   }
 }
 @media (min-width: 1200px) {
   .portada_galeria {
-    height: 40vh;
+    height: 40vh !important;
   }
 }
 /*Turnos.html*/
@@ -393,8 +399,8 @@ footer .footer_final {
   row-gap: 4rem;
 }
 .contenedor_turnos .turno {
-  height: 50rem;
   width: 30rem;
+  height: 50rem;
   gap: 5rem;
   border-radius: 3rem;
   background-color: #e0e0e0;
@@ -424,8 +430,8 @@ footer .footer_final {
 
 @media (min-width: 480px) {
   .turno {
-    height: 55rem;
     width: 35rem;
+    height: 55rem;
   }
 }
 @media (min-width: 1200px) {
@@ -461,18 +467,12 @@ footer .footer_final {
 @media (min-width: 992px) {
   .contenedor_campos {
     flex-direction: row !important;
-    height: 25rem;
+    height: 25rem !important;
   }
 }
 /*Contacto ubicación*/
 .contenedor_contacto {
   display: grid;
-}
-.contenedor_contacto .imagen_contacto img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .contenedor_contacto .info_contacto {
   display: grid;

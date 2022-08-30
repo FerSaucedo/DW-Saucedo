@@ -27,8 +27,7 @@
     align-items: center;
     row-gap: 4rem;
     .turno {
-        height: 50rem;
-        width: 30rem;
+        @include wh(30rem, 50rem);
         gap: 5rem;
         border-radius: 3rem;
         background-color: #e0e0e0;
@@ -39,15 +38,15 @@
             transform: scale(1.05);
         }
         h2 {
-            color: $dorado;
+            color: map-get($color, dorado);
             text-shadow: 0px 4px 5px rgba(197,157,95,0.66);
         }
     }   
     .turno2 {
-        background-color: $oscuro;
-        color: $blanco;
+        background-color: map-get($color, oscuro);
+        color: map-get($color, blanco);
         h2 {
-            color: $dorado;
+            color: map-get($color, dorado);
             text-shadow: 0px 4px 5px rgba(197,157,95,0.66);
         }
     }
@@ -60,8 +59,7 @@
 
 @media (min-width: 480px) {
    .turno {
-    height: 55rem;
-    width: 35rem;
+    @include wh(35rem, 55rem);
    }
 } 
 
