@@ -1,0 +1,63 @@
+
+/*Contacto.html*/
+
+.mapa_contacto {
+    height: 60rem;
+}
+
+/*Contacto formulario*/
+
+.formulario {
+    background-color: map-get($color, negro);
+    .contenedor_campos {
+        height: 60rem;
+        flex-wrap: wrap;
+        gap: 5rem;
+        .campo {
+            border: .1rem solid map-get($color, blanco);
+            background-color: transparent;
+            color: map-get($color, gris);
+            @include wh(30rem, 5rem);
+            padding: 1rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+   .contenedor_campos {
+    flex-direction: row !important;
+    height: 25rem !important;
+   }
+} 
+
+/*Contacto ubicación*/
+
+.contenedor_contacto {
+    display: grid;
+    .imagen_contacto {
+        img {
+            @extend %img;
+        }
+    }
+    .info_contacto {
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        gap: 2rem;
+        .datos {
+            gap: 1rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+   .contenedor_contacto {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3rem;
+    .info_contacto{
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+   }
+} 

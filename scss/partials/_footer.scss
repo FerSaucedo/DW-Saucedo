@@ -1,0 +1,45 @@
+
+/*Footer*/
+
+footer {
+    background-color: map-get($color, negro);
+    a {
+        &:visited {
+            color: map-get($color, blanco);
+        }
+        &:hover,
+        .logo:hover {
+            color: map-get($color, dorado) !important;
+        }
+    }
+    .logo {
+        font-size: 3rem;
+    }
+    .contenedor_footer1 {
+        min-height: 25rem;
+    }
+    .contenedor_redes {
+        gap: 1.3rem;
+    }
+    .contenedor_footer3 {
+        gap: 1.3rem;
+        a {
+            color: map-get($color, blanco);
+        }
+    }
+    .contenedor_footer4 {
+        span {
+            font-size: 1.7rem;
+        }
+    }
+    .footer_final {
+        border-top: 0.1rem solid map-get($color, gris);
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor_footer3,
+    .contenedor_footer4 {
+        align-items: flex-start !important;
+    }
+}

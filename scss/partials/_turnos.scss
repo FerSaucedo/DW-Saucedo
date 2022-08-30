@@ -1,0 +1,72 @@
+
+/*Turnos.html*/
+
+.portada_turnos {
+    height: 70vh;
+    background-image: url(../img/turnosm.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 1200px) {
+   .portada_turnos{
+        background-image: url(../img/turnos.jpg);
+        h1 {
+            font-size: 7rem;
+        }
+   }
+
+} 
+
+/*Turnos.html - selección de turno*/
+
+.contenedor_turnos {
+    max-width: 140rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 4rem;
+    .turno {
+        @include wh(30rem, 50rem);
+        gap: 5rem;
+        border-radius: 3rem;
+        background-color: #e0e0e0;
+        box-shadow: 15px 15px 30px #bebebe,
+                    -15px -15px 30px #ffffff;
+        transition: all 300ms;
+        &:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            color: map-get($color, dorado);
+            text-shadow: 0px 4px 5px rgba(197,157,95,0.66);
+        }
+    }   
+    .turno2 {
+        background-color: map-get($color, oscuro);
+        color: map-get($color, blanco);
+        h2 {
+            color: map-get($color, dorado);
+            text-shadow: 0px 4px 5px rgba(197,157,95,0.66);
+        }
+    }
+}
+
+.boton,
+.boton2 {
+    padding: 2rem 3rem;
+}
+
+@media (min-width: 480px) {
+   .turno {
+    @include wh(35rem, 55rem);
+   }
+} 
+
+@media (min-width: 1200px) {
+   .contenedor_turnos {
+    height: 70rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+   }
+} 

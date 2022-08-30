@@ -1,0 +1,47 @@
+
+/*Header*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    nav {
+        min-height: 8rem;
+        box-shadow: 0.1rem 0.2rem 0.3rem #333;
+        .logo {
+            font-size: 3rem;
+        }
+        .navbar-toggler-icon {
+            @include wh(3rem, 3rem);
+        }
+        .nav_flex {
+            gap: 2rem;
+            .nav-link {
+                letter-spacing: 0.4rem;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    @include wh(100%, 0.1rem);
+                    transform: scaleX(0);
+                    bottom: 0;
+                    left: 0;
+                    background-color: map-get($color, negro);
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+            }
+        }
+    }
+}
+
+.navbar-nav li:hover .nav-link:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@media (min-width: 992px) {
+    .nav_flex {
+        gap: 5rem !important;
+    }
+}

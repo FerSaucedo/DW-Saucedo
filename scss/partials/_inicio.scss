@@ -1,0 +1,85 @@
+
+/*Portada index*/
+
+.portada_hero {
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/herom.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (min-width: 1200px) {
+    .portada_hero {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        h1 {
+            font-size: 12rem;
+            margin: 0;
+        }
+        p {
+            font-size: 2rem;
+        }
+    }
+}
+
+/*Conocenos index*/
+
+.conocenos_contenedor {
+    background-color: map-get($color, oscuro);
+    min-height: 50rem;
+    .conocenos_contenido {
+        max-width: 100rem;
+        span {
+            text-transform: uppercase;
+            color: map-get($color, dorado);
+        }
+    }
+}
+
+.imagen_salon {
+    background-image: url(../img/salon.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    height: 60%;
+}
+
+/*Servicios index*/
+
+.contenedor_servicios {
+    min-height: 30rem;
+    gap: 2rem;
+}
+
+/*Blog index*/
+
+.contenedor_blog {
+    min-height: 60rem;
+    background-color: map-get($color, oscuro);
+    .entrada_blog {
+        max-width: 35rem;
+        border-bottom: 0.1rem solid map-get($color, gris);
+        img {
+            @include wh(30rem, 35rem);
+            object-fit: cover;
+        }
+        a {
+            color: map-get($color, dorado);
+            border-bottom: 1.5px solid;
+        }
+    }
+}
+
+@media (min-width: 650px) {
+    .entrada_blog {
+        border-bottom: none !important;
+    }
+}
+
+/*Mapa index*/
+
+.mapa_principal {
+    height: 40rem;
+}

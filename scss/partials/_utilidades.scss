@@ -1,0 +1,35 @@
+
+/*Utilidades*/
+
+.borde {
+    border-bottom: .1rem solid !important;
+}
+
+.boton {
+    @include boton(map-get($color, oscuro), map-get($color, blanco));
+    &:hover {
+        background-color: map-get($color, blanco);
+        color: map-get($color, dorado);
+    }
+}
+
+.boton2 {
+    @include boton(#e0e0e0, map-get($color, negro));
+    &:hover {
+        background-color: map-get($color, negro);
+        color: map-get($color, dorado);
+    }    
+}
+
+.boton3 {
+    border: none;
+    @include wh(20rem, 5rem);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color .5s ease;
+    &:hover {
+        cursor: pointer;
+        background-color: map-get($color, dorado);
+    }    
+}
