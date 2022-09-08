@@ -29,7 +29,7 @@
 
 .conocenos_contenedor {
     background-color: map-get($color, oscuro);
-    min-height: 50rem;
+    height: 60rem;
     .conocenos_contenido {
         max-width: 100rem;
         span {
@@ -38,6 +38,13 @@
         }
     }
 }
+
+
+@media (min-width: 700px) {
+   .conocenos_contenedor {
+    height: 50rem;
+   }
+} 
 
 .imagen_salon {
     background-image: url(../img/salon.jpg);
@@ -49,7 +56,7 @@
 /*Servicios index*/
 
 .contenedor_servicios {
-    min-height: 30rem;
+    min-height: 33rem;
     gap: 2rem;
 }
 

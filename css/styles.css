@@ -213,7 +213,7 @@ footer .footer_final {
 /*Conocenos index*/
 .conocenos_contenedor {
   background-color: #262626;
-  min-height: 50rem;
+  height: 60rem;
 }
 .conocenos_contenedor .conocenos_contenido {
   max-width: 100rem;
@@ -223,6 +223,11 @@ footer .footer_final {
   color: #C59D5F;
 }
 
+@media (min-width: 700px) {
+  .conocenos_contenedor {
+    height: 50rem;
+  }
+}
 .imagen_salon {
   background-image: url(../img/salon.jpg);
   background-position: center;
@@ -232,7 +237,7 @@ footer .footer_final {
 
 /*Servicios index*/
 .contenedor_servicios {
-  min-height: 30rem;
+  min-height: 33rem;
   gap: 2rem;
 }
 
