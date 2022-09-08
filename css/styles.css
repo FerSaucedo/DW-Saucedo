@@ -29,6 +29,14 @@ html body a {
 html body li {
   list-style: none;
 }
+html body ::-moz-selection {
+  background-color: #C59D5F;
+  color: #FFFFFF;
+}
+html body ::selection {
+  background-color: #C59D5F;
+  color: #FFFFFF;
+}
 
 *,
 *:before,
@@ -166,7 +174,10 @@ footer .contenedor_footer4 span {
   font-size: 1.7rem;
 }
 footer .footer_final {
-  border-top: 0.1rem solid #C6C6C6;
+  border-top: 0.2rem solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #f19cc1, #94bbe9);
+  gap: 5rem;
 }
 
 @media (min-width: 768px) {
@@ -216,7 +227,7 @@ footer .footer_final {
   background-image: url(../img/salon.jpg);
   background-position: center;
   background-attachment: fixed;
-  height: 60%;
+  height: 60vh;
 }
 
 /*Servicios index*/
@@ -336,7 +347,7 @@ footer .footer_final {
 }
 /*Galeria.html*/
 .galeria_bg {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/galeria.jfif);
+  background-image: radial-gradient(circle, rgba(238, 174, 202, 0.749) 0%, rgba(148, 187, 233, 0.749) 100%), url(../img/galeria.jfif);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -399,7 +410,7 @@ footer .footer_final {
   row-gap: 4rem;
 }
 .contenedor_turnos .turno {
-  width: 30rem;
+  width: 33rem;
   height: 50rem;
   gap: 5rem;
   border-radius: 3rem;
@@ -428,12 +439,6 @@ footer .footer_final {
   padding: 2rem 3rem;
 }
 
-@media (min-width: 480px) {
-  .turno {
-    width: 35rem;
-    height: 55rem;
-  }
-}
 @media (min-width: 1200px) {
   .contenedor_turnos {
     height: 70rem;

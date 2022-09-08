@@ -27,7 +27,7 @@
     align-items: center;
     row-gap: 4rem;
     .turno {
-        @include wh(30rem, 50rem);
+        @include wh(33rem, 50rem);
         gap: 5rem;
         border-radius: 3rem;
         background-color: #e0e0e0;
@@ -56,12 +56,6 @@
 .boton2 {
     padding: 2rem 3rem;
 }
-
-@media (min-width: 480px) {
-   .turno {
-    @include wh(35rem, 55rem);
-   }
-} 
 
 @media (min-width: 1200px) {
    .contenedor_turnos {

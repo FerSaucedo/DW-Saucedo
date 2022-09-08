@@ -33,7 +33,10 @@ footer {
         }
     }
     .footer_final {
-        border-top: 0.1rem solid map-get($color, gris);
+        border-top: 0.2rem solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(90deg, #f19cc1, #94bbe9);
+        gap: 5rem;
     }
 }
 

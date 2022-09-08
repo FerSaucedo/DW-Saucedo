@@ -33,6 +33,10 @@ html {
         li {
             list-style: none;
         }
+        ::selection {
+            background-color: #C59D5F;
+            color: #FFFFFF;
+        }
     }
 }
 
