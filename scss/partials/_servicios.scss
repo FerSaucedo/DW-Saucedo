@@ -32,6 +32,7 @@
     .servicio2 {
         height: 30rem;  
         gap: 2rem;
+        max-width: 60rem;
         p {
             margin: 0;
         }
@@ -41,7 +42,7 @@
 @media (min-width: 480px) {
     .servicio1 li,
     .servicio2 li {
-        justify-content: space-evenly !important;
+        // justify-content: space-evenly !important;
         .linea {
             border-bottom: .1rem solid map-get($color, gris);
             width: 50%;
@@ -70,6 +71,7 @@
         gap: 5rem;
         .servicio1 {
             width: 40%;
+            margin: 0 !important;
          }
     }
 

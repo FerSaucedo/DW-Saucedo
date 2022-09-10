@@ -302,6 +302,7 @@ footer .footer_final {
 .servicios_main .servicio2 {
   height: 30rem;
   gap: 2rem;
+  max-width: 60rem;
 }
 .servicios_main .servicio1 p,
 .servicios_main .servicio2 p {
@@ -309,10 +310,6 @@ footer .footer_final {
 }
 
 @media (min-width: 480px) {
-  .servicio1 li,
-.servicio2 li {
-    justify-content: space-evenly !important;
-  }
   .servicio1 li .linea,
 .servicio2 li .linea {
     border-bottom: 0.1rem solid #C6C6C6;
@@ -339,6 +336,7 @@ footer .footer_final {
   }
   .contenedor_servicio1 .servicio1 {
     width: 40%;
+    margin: 0 !important;
   }
   .servicios_contenedor2 {
     display: grid;
