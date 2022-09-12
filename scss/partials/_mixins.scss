@@ -3,7 +3,7 @@
     @extend %boton;
     background-color: $bgColor;
     color: $textColor;
-    border: .3rem solid map-get($color, dorado);
+    border: .1rem solid map-get($color, dorado);
 }
 
 @mixin wh($width, $height) {

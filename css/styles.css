@@ -37,6 +37,10 @@ html body ::selection {
   background-color: #C59D5F;
   color: #FFFFFF;
 }
+html body .logo {
+  font-size: 3rem;
+  letter-spacing: 0.25rem;
+}
 
 *,
 *:before,
@@ -44,8 +48,7 @@ html body ::selection {
   box-sizing: inherit;
 } /*snipet box-sizing */
 .boton2, .boton {
-  border-radius: 0.8rem;
-  padding: 2rem 8rem;
+  padding: 1.8rem 7rem;
   text-transform: uppercase;
   transition: background-color 0.5s ease;
 }
@@ -65,7 +68,7 @@ html body ::selection {
 .boton {
   background-color: #262626;
   color: #FFFFFF;
-  border: 0.3rem solid #C59D5F;
+  border: 0.1rem solid #C59D5F;
 }
 .boton:hover {
   background-color: #FFFFFF;
@@ -75,7 +78,7 @@ html body ::selection {
 .boton2 {
   background-color: #e0e0e0;
   color: #000000;
-  border: 0.3rem solid #C59D5F;
+  border: 0.1rem solid #C59D5F;
 }
 .boton2:hover {
   background-color: #000000;
@@ -86,14 +89,24 @@ html body ::selection {
   border: none;
   width: 20rem;
   height: 5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
   transition: background-color 0.5s ease;
 }
 .boton3:hover {
   cursor: pointer;
   background-color: #C59D5F;
+}
+
+.boton4 {
+  border: 0.1rem solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  letter-spacing: 0.4rem;
+  padding: 1.8rem 7rem;
+  transition: background-color 0.5s ease;
+}
+.boton4:hover {
+  background-color: #FFFFFF;
+  color: #000000 !important;
 }
 
 /*Header*/
@@ -106,9 +119,6 @@ header {
 header nav {
   min-height: 8rem;
   box-shadow: 0.1rem 0.2rem 0.3rem #333;
-}
-header nav .logo {
-  font-size: 3rem;
 }
 header nav .navbar-toggler-icon {
   width: 3rem;
@@ -154,9 +164,6 @@ footer a:visited {
 footer a:hover,
 footer a .logo:hover {
   color: #C59D5F !important;
-}
-footer .logo {
-  font-size: 3rem;
 }
 footer .contenedor_footer1 {
   min-height: 25rem;
@@ -237,7 +244,7 @@ footer .footer_final {
 
 /*Servicios index*/
 .contenedor_servicios {
-  min-height: 33rem;
+  min-height: 40rem;
   gap: 2rem;
 }
 
@@ -500,4 +507,25 @@ footer .footer_final {
   .contenedor_contacto .info_contacto h3 {
     font-size: 2.5rem;
   }
+}
+.proximamente-bg {
+  background-image: url(../img/proximamente.jpg);
+}
+
+.proximamente-bg2 {
+  background-image: url(../img/proximamente2.jpg);
+}
+
+.proximamente-bg,
+.proximamente-bg2 {
+  height: 90vh;
+}
+.proximamente-bg .proximamente,
+.proximamente-bg2 .proximamente {
+  height: 100%;
+}
+.proximamente-bg .proximamente h1,
+.proximamente-bg2 .proximamente h1 {
+  font-size: 4rem;
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=styles.css.map */

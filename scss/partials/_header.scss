@@ -8,9 +8,6 @@ header {
     nav {
         min-height: 8rem;
         box-shadow: 0.1rem 0.2rem 0.3rem #333;
-        .logo {
-            font-size: 3rem;
-        }
         .navbar-toggler-icon {
             @include wh(3rem, 3rem);
         }
