@@ -267,6 +267,9 @@ footer .footer_final {
   color: #C59D5F;
   border-bottom: 1.5px solid;
 }
+.contenedor_blog .entrada_blog a:hover {
+  font-weight: bold;
+}
 
 @media (min-width: 650px) {
   .entrada_blog {
