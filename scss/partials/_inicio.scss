@@ -76,7 +76,7 @@
             color: map-get($color, dorado);
             border-bottom: 1.5px solid;
             &:hover {
-                font-weight: bold;
+                font-weight: bold !important;
             }
         }
     }

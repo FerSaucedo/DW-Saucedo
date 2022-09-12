@@ -268,7 +268,7 @@ footer .footer_final {
   border-bottom: 1.5px solid;
 }
 .contenedor_blog .entrada_blog a:hover {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 @media (min-width: 650px) {
