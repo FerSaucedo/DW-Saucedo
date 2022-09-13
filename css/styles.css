@@ -521,6 +521,8 @@ footer .footer_final {
 .proximamente-bg,
 .proximamente-bg2 {
   height: 90vh;
+  background-size: cover;
+  background-position: center center;
 }
 .proximamente-bg .proximamente,
 .proximamente-bg2 .proximamente {
